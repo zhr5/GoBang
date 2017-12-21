@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainControl.MyController"> 	  
+   <children>
+      <Pane fx:id="Root" prefHeight="600.0" prefWidth="700.0">
+         <children>
+            <Label layoutX="600.0" layoutY="200.0" prefHeight="100.0" prefWidth="100.0" text="获胜方:">
+               <font>
+                  <Font name="Consolas Bold" size="28.0" />
+               </font>
+            </Label>
+            <ImageView>
+         	<image>
+         			<Image url="@ChessBoard.jpg" />
+         	</image>
+         	</ImageView>
+            <Canvas fx:id="draw" height="600.0" width="600.0" onMouseClicked="#handleCanvasClicked" />
+            <Label fx:id="win" layoutX="600.0" layoutY="300.0" prefHeight="100.0" prefWidth="100.0">
+               <font>
+                  <Font name="Consolas Bold" size="30.0" />
+               </font>
+            </Label>
+            <Line endX="580.0" endY="60.0" startX="20.0" startY="60.0" />
+            <Line endX="580.0" endY="100.0" startX="20.0" startY="100.0" />
+            <Line endX="580.0" endY="140.0" startX="20.0" startY="140.0" />
+            <Line endX="580.0" endY="180.0" startX="20.0" startY="180.0" />
+            <Line endX="580.0" endY="220.0" startX="20.0" startY="220.0" />
+            <Line endX="580.0" endY="260.0" startX="20.0" startY="260.0" />
+            <Line endX="580.0" endY="300.0" startX="20.0" startY="300.0" />
+            <Line endX="580.0" endY="340.0" startX="20.0" startY="340.0" />
+            <Line endX="580.0" endY="380.0" startX="20.0" startY="380.0" />
+            <Line endX="580.0" endY="420.0" startX="20.0" startY="420.0" />
+            <Line endX="580.0" endY="460.0" startX="20.0" startY="460.0" />
+            <Line endX="580.0" endY="500.0" startX="20.0" startY="500.0" />
+            <Line endX="580.0" endY="540.0" startX="20.0" startY="540.0" />
+            <Line endX="580.0" endY="580.0" startX="20.0" startY="580.0" />            
+            
+            <Line endX="60.0" endY="580.0" startX="60.0" startY="20.0" />
+            <Line endX="100.0" endY="580.0" startX="100.0" startY="20.0" />
+            <Line endX="140.0" endY="580.0" startX="140.0" startY="20.0" />
+            <Line endX="180.0" endY="580.0" startX="180.0" startY="20.0" />
+            <Line endX="220.0" endY="580.0" startX="220.0" startY="20.0" />
+            <Line endX="260.0" endY="580.0" startX="260.0" startY="20.0" />
+            <Line endX="300.0" endY="580.0" startX="300.0" startY="20.0" />
+            <Line endX="340.0" endY="580.0" startX="340.0" startY="20.0" />
+            <Line endX="380.0" endY="580.0" startX="380.0" startY="20.0" />
+            <Line endX="420.0" endY="580.0" startX="420.0" startY="20.0" />
+            <Line endX="460.0" endY="580.0" startX="460.0" startY="20.0" />
+            <Line endX="500.0" endY="580.0" startX="500.0" startY="20.0" />
+            <Line endX="540.0" endY="580.0" startX="540.0" startY="20.0" />
+            <Line endX="580.0" endY="580.0" startX="580.0" startY="20.0" />
+         
+         </children>         
+      </Pane>
+   </children>
+</AnchorPane>
