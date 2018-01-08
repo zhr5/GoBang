@@ -4,21 +4,22 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.ArcType;
+import javafx.stage.Stage;
 
 public class MyController implements Initializable{
 	public int ChessColor=-1;//黑子
 	public Chess [][] ChessStatus=new Chess [13][13];
 	@FXML
 	private Pane Root;
-	@FXML
-	private Label win;
 	@FXML
 	private Canvas draw;
 	@FXML
@@ -67,8 +68,9 @@ public class MyController implements Initializable{
 					winner = "黑方";
 				else
 					winner = "白方";
-				win.setText(winner);
-				
+				Stage stage=new Stage();
+				stage.setScene(new Scene(new Button(winner+"赢"),100,100));
+				stage.show();
 				}
 			}
 		}

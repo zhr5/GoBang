@@ -11,7 +11,7 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			AnchorPane root = FXMLLoader.load(getClass().getResource("/View/ChessBoard.fxml"));
-			Scene scene = new Scene(root,700,600);
+			Scene scene = new Scene(root,600,600);
 			scene.getStylesheets().add(getClass().getResource("/View/application.css").toExternalForm());
 			primaryStage.setTitle("双人五子棋");
 			primaryStage.setScene(scene);
